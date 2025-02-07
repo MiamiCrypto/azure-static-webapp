@@ -1,6 +1,8 @@
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide img");
 const totalSlides = slides.length;
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -8,12 +10,16 @@ function showSlide(index) {
     });
 }
 
-document.getElementById("prev").addEventListener("click", () => {
+// Show the first slide initially
+showSlide(currentIndex);
+
+// Event listeners for Prev & Next buttons
+prevButton.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
 });
 
-document.getElementById("next").addEventListener("click", () => {
+nextButton.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
 });
@@ -23,7 +29,4 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
 }, 3000);
-
-// Initialize first slide
-showSlide(currentIndex);
 
