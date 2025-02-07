@@ -36,7 +36,7 @@ body {
     width: 60%; /* Adjust width of the banner */
     height: 300px; /* Adjust height of the banner */
     position: relative; /* Keeps buttons and images in place */
-    padding: 20px; /* Controls space inside the banner */
+    padding: 10px; /* Controls space inside the banner */
     background: white; /* Banner background color */
     border-radius: 10px; /* Adjusts the corner roundness */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
