@@ -1,8 +1,8 @@
-/* Import fonts */
+/* style.css */
 @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
-/* Reset default margins, paddings, and set box-sizing */
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
@@ -10,88 +10,86 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Set general body styles */
+/* Body styles to center everything */
 body {
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 20px 0; /* Adds space at the top and bottom */
-    color: #333; /* Dark gray text */
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh; /* Makes the content fit within full screen */
-    overflow: hidden; /* Prevents unwanted scrolling */
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Ensure all banners (top, middle, bottom) have the same width */
+/* Make all banners the same width */
 .banner, .slider-container, .content {
-    width: 80%; /* Ensures consistency in width */
-    max-width: 900px; /* Prevents banners from becoming too wide */
-    margin: 0 auto; /* Centers them horizontally */
+    width: 80%; /* Ensures all sections have the same width */
+    max-width: 900px;
+    margin: 0 auto; /* Centers sections */
 }
 
-/* Top banner (Header) */
+/* Top Banner (Header) */
 .banner {
-    background-color: #f6d365; /* Yellow background */
-    padding: 20px; /* Space inside the banner */
-    border-radius: 10px; /* Soft rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
-    margin-top: 15px; /* Adds space from the top of the page */
+    background-color: #f6d365;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px; /* Adds spacing from the top */
 }
 
-/* Middle section (Slider Container) */
+/* Image Slider Container */
 .slider-container {
-    height: 320px; /* Controls the height of the image slider */
+    height: 320px; /* Sets height of image banner */
     position: relative;
     padding: 10px;
-    background: white; /* White background */
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px; /* Ensures spacing between slider and bottom banner */
+    margin-bottom: 25px;
 }
 
-/* Slider that contains all the images */
+/* Slider containing all images */
 .slider {
-    width: 100%; /* Fills the entire slider-container */
+    width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden; /* Hides images outside of visible area */
+    overflow: hidden;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Individual image slides */
+/* Individual slide settings */
 .slide {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0; /* Hidden by default */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* Image settings inside slides */
+/* Image settings */
 .slide img {
-    width: 100%; /* Makes sure the image fills the slider container */
-    height: 100%; /* Keeps image proportional */
-    object-fit: contain; /* Ensures the full image is visible without cropping */
+    width: 100%; /* Ensures image fits container */
+    height: 100%;
+    object-fit: contain; /* Prevents cropping */
 }
 
-/* Ensures only the active slide is visible */
 .slide.active {
-    opacity: 1;
+    opacity: 1; /* Makes active slide visible */
 }
 
-/* Styling for navigation buttons */
+/* Navigation buttons */
 button {
     position: absolute;
-    bottom: -40px; /* Positions buttons just below the slider */
-    background-color: #0078D4; /* Blue color */
+    bottom: -40px;
+    background-color: #0078D4;
     color: white;
     border: none;
     padding: 8px 14px;
@@ -105,24 +103,24 @@ button:hover {
     background-color: #005a9e;
 }
 
-/* Bottom banner (Content section) */
+/* Bottom Banner (Content) */
 .content {
     padding: 20px;
-    background: white; /* White background */
+    background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
-    max-width: 700px; /* Restricts the width for readability */
-    margin-bottom: 15px; /* Adds space from the bottom of the page */
+    max-width: 700px;
+    margin-bottom: 15px;
 }
 
-/* Bottom banner heading */
+/* Bottom Banner Heading */
 .content h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Bottom banner paragraph text */
+/* Bottom Banner Paragraphs */
 .content p {
     font-size: 1rem;
     line-height: 1.5;
