@@ -32,7 +32,7 @@ body {
 }
 
 .slider-container {
-    width: 60%; /* Adjusted to fit within red rectangle */
+    width: 1000%; /* Adjusted to fit within red rectangle */
     height: 300px; /* Adjusted height */
     position: relative;
     padding: 10px;
