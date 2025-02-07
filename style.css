@@ -33,8 +33,8 @@ body {
 }
 
 .slider-container {
-    width: 80%; /* Adjust width of the banner */
-    height: 200px; /* Adjust height of the banner */
+    width: 100%; /* Adjust width of the banner */
+    height: 300px; /* Adjust height of the banner */
     position: relative; /* Keeps buttons and images in place */
     padding: 10px; /* Controls space inside the banner */
     background: white; /* Banner background color */
