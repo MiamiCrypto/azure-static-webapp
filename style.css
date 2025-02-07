@@ -23,12 +23,12 @@ body {
 }
 
 .banner {
-    background-color: #f6d365;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%; /* Adjusted for better fit for top banner */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px; /* Spacing from the top */
+    background-color: #f6d365; /* Changes the background color */
+    padding: 20px; /* Controls the spacing inside the banner */
+    border-radius: 10px; /* Adjusts the corner roundness */
+    width: 80%; /* Controls the width of the banner */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+    margin-top: 20px; /* Space between the top of the page and the banner */
 }
 
 .slider-container {
