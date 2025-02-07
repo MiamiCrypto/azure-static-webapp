@@ -12,7 +12,7 @@
 body {
     background-color: #f4f4f4;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0; /* Added spacing above and below */
     color: #333;
     display: flex;
     flex-direction: column;
@@ -26,18 +26,18 @@ body {
     background-color: #f6d365;
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
+    width: 80%; /* Adjusted for better fit */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 0;
+    margin-top: 10px; /* Spacing from the top */
 }
 
 .slider-container {
-    width: 100%;
-    height: 250px;
+    width: 60%; /* Adjusted to fit within red rectangle */
+    height: 300px; /* Adjusted height */
     position: relative;
-    padding: 20px;
+    padding: 10px;
     background: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
@@ -74,15 +74,15 @@ body {
 }
 
 button {
-    position: center;
-    bottom: 30px;
+    position: absolute;
+    bottom: -40px; /* Adjusted button positioning */
     background-color: #0078D4;
     color: white;
     border: none;
     padding: 8px 14px;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -91,17 +91,18 @@ button:hover {
 }
 
 .content {
-    width: 100%;
-    padding: 25px;
+    width: 60%; /* Adjusted to fit in the purple rectangle */
+    padding: 20px;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
+    margin-bottom: 10px; /* Spacing from the bottom */
 }
 
 .content h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
