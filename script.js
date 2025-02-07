@@ -1,12 +1,18 @@
 let currentIndex = 0;
-const slides = document.querySelectorAll(".slide img");
+const slides = document.querySelectorAll(".slide");
 const totalSlides = slides.length;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.parentElement.style.opacity = i === index ? "1" : "0";
+        slide.classList.remove("active");
+        if (i === index) {
+            slide.classList.add("active");
+        }
     });
 }
+
+// Show first slide initially
+showSlide(currentIndex);
 
 document.getElementById("prev").addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
@@ -24,8 +30,6 @@ setInterval(() => {
     showSlide(currentIndex);
 }, 2000);
 
-// Initialize first slide
-showSlide(currentIndex);
 
 
 
