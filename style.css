@@ -75,7 +75,7 @@ body {
 
 button {
     position: absolute;
-    bottom: -40px; /* Adjusted button positioning */
+    bottom: -20px; /* Adjusted button positioning */
     background-color: #0078D4;
     color: white;
     border: none;
