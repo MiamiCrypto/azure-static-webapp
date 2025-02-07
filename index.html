@@ -9,7 +9,7 @@
 <body>
 
     <div class="banner">
-        <h1>Azure Static Web App</h1>
+        <h1>Cat Sketches for Fun</h1>
         <p>Simple rotating image slider hosted on Azure</p>
 
         <div class="slider">
@@ -19,7 +19,40 @@
             <div class="slide"><img src="images/Cat4.png" alt="Slide 4"></div>
             <div class="slide"><img src="images/Cat5.png" alt="Slide 5"></div>
         </div>
+        <button id="prev">&#10094; Prev</button>
+        <button id="next">Next &#10095;</button>
     </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide img");
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.parentElement.style.opacity = i === index ? "1" : "0";
+            });
+        }
+
+        document.getElementById("prev").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentIndex);
+        });
+
+        document.getElementById("next").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        });
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }, 3000);
+
+        // Initialize first slide
+        showSlide(currentIndex);
+    </script>
 
 </body>
 </html>
