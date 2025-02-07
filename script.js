@@ -1,11 +1,11 @@
 <script>
     let currentIndex = 0;
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slide img");
     const totalSlides = slides.length;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
-            slide.style.opacity = i === index ? "1" : "0";
+            slide.parentElement.style.opacity = i === index ? "1" : "0";
         });
     }
 
