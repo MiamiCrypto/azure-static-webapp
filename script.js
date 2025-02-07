@@ -1,40 +1,31 @@
-// Initialize variables
-let currentIndex = 0; // Tracks the current slide index
-const slides = document.querySelectorAll(".slide"); // Selects all slides
-const totalSlides = slides.length; // Counts total number of slides
+let currentIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
 
-// Function to show the current slide
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.remove("active"); // Remove active class from all slides
+        slide.classList.remove("active");
         if (i === index) {
-            slide.classList.add("active"); // Add active class only to the current slide
+            slide.classList.add("active");
         }
     });
 }
 
-// Display the first slide initially
+// Show first slide initially
 showSlide(currentIndex);
 
-// Event listener for Previous button
 document.getElementById("prev").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Move to previous slide
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
 });
 
-// Event listener for Next button
 document.getElementById("next").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % totalSlides; // Move to next slide
+    currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
 });
 
-// Auto-slide every 3 seconds for smooth transitions
+// Auto-slide every 2 seconds for faster performance
 setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
-}, 3000);
-
-
-
-
-
+}, 2000);
