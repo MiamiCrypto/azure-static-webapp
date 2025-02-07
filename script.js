@@ -18,13 +18,14 @@ document.getElementById("next").addEventListener("click", () => {
     showSlide(currentIndex);
 });
 
-// Auto-slide every 3 seconds
+// Auto-slide every 2 seconds for faster performance
 setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
-}, 3000);
+}, 2000);
 
 // Initialize first slide
 showSlide(currentIndex);
+
 
 
