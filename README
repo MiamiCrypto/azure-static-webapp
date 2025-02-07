@@ -1,0 +1,13 @@
+# Azure Static Web App
+
+This is a simple static web app hosted on **Azure Static Web Apps** and deployed using **GitHub Actions**.
+
+## 📌 Features
+- Static website with **HTML, CSS, and JavaScript**.
+- Hosted using **Azure Static Web Apps** (Free Tier).
+- GitHub Actions for **automatic deployment**.
+
+## 🚀 How It Works
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/azure-static-webapp.git
