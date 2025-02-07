@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     width: 65%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px; /* Reduce margin to move closer to the top */
+    margin-top: 20px; /* Reduce margin to move closer to the top */
 }
 
 .banner h1 {
@@ -59,7 +59,7 @@ body {
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin-bottom: 5px; /* Reduce margin to move closer to the bottom */
+    margin-bottom: 20px; /* Reduce margin to move closer to the bottom */
 }
 
 .content h2 {
