@@ -33,7 +33,7 @@ body {
 }
 
 .slider-container {
-    width: 60%; /* Adjust width of the banner */
+    width: 70%; /* Adjust width of the banner */
     height: 300px; /* Adjust height of the banner */
     position: relative; /* Keeps buttons and images in place */
     padding: 10px; /* Controls space inside the banner */
