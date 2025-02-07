@@ -33,11 +33,11 @@ body {
 
 .slider-container {
     width: 100%; /* Adjusted to fit within red rectangle */
-    height: 400px; /* Adjusted height */
+    height: 300px; /* Adjusted height */
     position: relative;
-    padding: 10px;
+    padding: 20px;
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
