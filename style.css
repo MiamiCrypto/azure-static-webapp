@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly; /* Ensures proper spacing between elements */
     height: 100vh;
     overflow: hidden;
 }
@@ -51,53 +51,26 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .content {
     width: 65%;
-    padding: 10px;
+    padding: 15px;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
 }
 
-/* Adjusting Image Size */
-.slider-container {
-    width: 60%;
-    position: relative;
-    padding: 5px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
-.slider {
-    width: 100%;
-    height: 250px; /* Increased height for larger images */
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* Navigation Buttons */
-button {
-    background-color: #0078D4;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 6px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    background-color: #005a9e;
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 5px;
 }
