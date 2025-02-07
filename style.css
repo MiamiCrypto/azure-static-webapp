@@ -12,7 +12,7 @@
 body {
     background-color: #f4f4f4;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -24,9 +24,9 @@ body {
 
 .banner {
     background-color: #f6d365;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    width: 75%;
+    width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 0;
 }
@@ -74,15 +74,15 @@ body {
 }
 
 button {
-    position: absolute;
-    bottom: -30px;
+    position: center;
+    bottom: 30px;
     background-color: #0078D4;
     color: white;
     border: none;
     padding: 8px 14px;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -91,11 +91,11 @@ button:hover {
 }
 
 .content {
-    width: 50%;
-    padding: 15px;
+    width: 100%;
+    padding: 25px;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     max-width: 600px;
 }
